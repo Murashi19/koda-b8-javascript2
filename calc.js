@@ -1,3 +1,11 @@
+
+/**
+ * Calculate the maximum, minimum, and average values ​​of an array
+ * @param {number[]} nilai - Array of numeric values to be calculated
+ * @returns {Object}  - An object containing the maximum, minimum, and average values
+ * @throws {Error} - If the input is not an array, the array is empty, or the array elements are not numbers
+ */
+
 function hitungNilai(nilai) {
     // Validasi apakah array
     if (!Array.isArray(nilai)) {
@@ -24,6 +32,7 @@ function hitungNilai(nilai) {
         total += nilai[i];
     }
     const average = total / nilai.length;
+
     return { max, min, average };
 }
 module.exports = { hitungNilai };
